@@ -1,0 +1,238 @@
+.contact-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 50px;
+  position: relative;
+  z-index: 2;
+  scroll-margin-top: 100px;
+  overflow: hidden;
+}
+
+.contact-content {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.contact-title {
+  font-family: var(--font-family);
+  font-size: 1.5rem;
+  color: #00ffba;
+  /* Vibrant Green/Teal */
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.contact-grid {
+  display: flex;
+  gap: 50px;
+  align-items: stretch;
+}
+
+.contact-form-container {
+  flex: 1;
+  background: #0f0c1b;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 40px;
+}
+
+.contact-desc {
+  color: #d1d1d1;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #ffffff;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  background: #151125;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 12px 16px;
+  font-family: var(--font-family);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff00ff;
+  box-shadow: 0 0 10px rgba(255, 0, 255, 0.2);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.submit-btn {
+  align-self: flex-start;
+  background: linear-gradient(135deg, #ff00ff, #a235ff);
+  color: #ffffff;
+  border: none;
+  border-radius: 99px;
+  padding: 12px 30px;
+  font-family: var(--font-family);
+  font-size: 0.95rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(255, 0, 255, 0.4);
+}
+
+.form-status {
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.form-status.success {
+  color: #00ffba;
+}
+
+.form-status.error {
+  color: #ff3366;
+}
+
+/* Right Contact Info side */
+.contact-info-container {
+  flex: 0.8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+}
+
+.info-list {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.info-icon {
+  width: 50px;
+  height: 50px;
+  background: #ccd6f6;
+  color: #05010d;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.info-item span {
+  color: #ffffff;
+  font-size: 1.05rem;
+}
+
+/* Social Circles */
+.social-circles {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.social-circle {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  background: #1a103c;
+  /* Base dark color */
+  font-size: 1.5rem;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-circle.github:hover {
+  background: #ffffff;
+  color: #000000;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.social-circle.linkedin:hover {
+  background: #0077b5;
+  box-shadow: 0 0 15px rgba(0, 119, 181, 0.5);
+}
+
+.social-circle.facebook:hover {
+  background: #1877f2;
+  box-shadow: 0 0 15px rgba(24, 119, 242, 0.5);
+}
+
+.social-circle.twitter:hover {
+  background: #1da1f2;
+  box-shadow: 0 0 15px rgba(29, 161, 242, 0.5);
+}
+
+.social-circle:hover {
+  transform: translateY(-3px);
+}
+
+.vertical-text-container-contact {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #1a103c;
+  padding: 30px 10px;
+  border-radius: 10px 0 0 10px;
+}
+
+.vertical-text-container-contact .vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  color: #ffffff;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 968px) {
+  .contact-grid {
+    flex-direction: column;
+  }
+
+  .vertical-text-container-contact {
+    display: none;
+  }
+}
