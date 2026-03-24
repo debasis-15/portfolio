@@ -24,7 +24,7 @@ const Sidebar = () => {
           <FaLinkedinIn />
         </a>
         <a
-          href="https://leetcode.com"
+          href="https://leetcode.com/u/debasis6935/"
           className="social-icon leetcode-icon"
           aria-label="LeetCode"
           target="_blank" rel="noopener noreferrer"
