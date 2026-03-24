@@ -70,7 +70,7 @@ const Contact = () => {
               </div>
               <div className="info-item">
                 <div className="info-icon"><FiPhone /></div>
-                <span>+91 XXXXXXXXXX</span>
+                <span>+91 9937119530</span>
               </div>
               <div className="info-item">
                 <div className="info-icon"><FiMapPin /></div>
