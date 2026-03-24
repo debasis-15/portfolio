@@ -65,8 +65,8 @@ const Contact = () => {
           <div className="contact-info-container">
             <div className="info-list">
               <div className="info-item">
-                <div className="info-icon">@</div>
-                <span>Debasis Sahoo</span>
+                <div className="info-icon"><FiMail /></div>
+                <span>sahoodebasis146@gmail.com</span>
               </div>
               <div className="info-item">
                 <div className="info-icon"><FiPhone /></div>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css';
-import profileImg from '../assets/IMG-20240723-WA0017.jpg';
+import profileImg from '../assets/Gemini_Generated_Image_u6wwkmu6wwkmu6ww.png';
 import indiaMapImg from '../assets/Gemini_Generated_Image_mm3wrmmm3wrmmm3w.png';
 import cricketImg from '../assets/Screenshot 2026-03-24 121110.png';
 import travelImg from '../assets/Screenshot 2026-03-24 121154.png';

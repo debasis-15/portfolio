@@ -6,6 +6,7 @@ import About from './components/About';
 import Skills from './components/Skills';
 import Certificate from './components/Certificate';
 import Projects from './components/Projects';
+import Achievements from './components/Achievements';
 import Contact from './components/Contact';
 import './App.css';
 
@@ -45,6 +46,7 @@ function App() {
         <Skills />
         <Certificate />
         <Projects />
+        <Achievements />
         <Contact />
       </main>
     </div>
